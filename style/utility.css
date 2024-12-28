@@ -34,6 +34,10 @@
     align-items: center;
 }
 
+.justify{
+    justify-content: center;
+}
+
 .gap-1{
     gap: 1rem;
 }
@@ -48,17 +52,32 @@ header{
     }
 }
 
+.contentBox{
+    width: 20rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 50px);
+}
+
+
 @media (width >= 80em) {
-    .container{
+    & .container{
         --max-width: 80rem;
     }
 
-    .desktop-only{
+    & .desktop-only{
         display: initial;
     }
 
     & img{
         width: 200px;
         
+    }
+
+    & .contentBox{
+        width: 100%;
+        display: flex;
+        padding-inline: 1rem;
+        height: 3.1rem;
     }
 }

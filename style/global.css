@@ -43,6 +43,10 @@ html{
 header{
     background: var(--bg-color);
 }
+section{
+    background: var(--bg-color);
+    margin-top: 20px;
+}
 
 img{
     width: 100px;

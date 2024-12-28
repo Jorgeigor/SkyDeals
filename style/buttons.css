@@ -23,3 +23,52 @@
     padding: .5rem 1rem;
     font-size: var(--fs-sm);
 }
+
+#origin{
+    grid-column: span 4;
+    border-radius: 0 0 0 .75rem;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#destination{
+    grid-column: span 4;
+    border-radius: 0 0 0 .75rem;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#startDate{
+    grid-column: span 2; /*Faz com que o item ocupe duas colunas*/
+    cursor: pointer;
+    border-radius: 0 0 0 .75rem;
+    border: 1px solid black;
+}
+
+#endDate{
+    grid-column: span 2; 
+    cursor: pointer;
+    border-radius: 0 0 0 .75rem;
+    border: 1px solid black;
+}
+
+.searchButton{
+    padding: .5rem 1rem;
+    font-size: var(--fs-base);
+    grid-column: span 4; 
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+@media(width >= 80em){
+    & #destination, #startDate{
+        width: 18.125rem;
+        border-radius: 0;
+    }
+
+
+    
+    & #lastSearch{
+        width: 18.125rem;
+    }
+}
