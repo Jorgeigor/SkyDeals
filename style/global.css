@@ -8,7 +8,9 @@
 
 :root{
     --text-color-primary: #F4F4F5;
-    --bg-color: #231F20;
+    --bg-color: #18181B;
+    --stroke-color: White;
+    --surface-color: #18181B;
     --ff-sans: 'Inter', system-ui, sans-serif;
     --fw-base: 400;
     --fw-md: 500;
@@ -39,24 +41,46 @@ html{
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--bg-color);
+    overflow-x: hidden;
 
-header{
-    background: var(--bg-color);
-}
-section{
-    background: var(--bg-color);
-    margin-top: 20px;
 }
 
-img{
-    width: 100px;
-    height: 2rem;
+h1, h2, h3 {
+    line-height: 1.2;
+    color: var(--textColor-primary);
+    font-weight: var(--fw-bold);
+    letter-spacing: -0.04em;
+}
+
+h1{
+    font-size: var(--fs-2xl);
+}
+
+h2{
+    font-size: var(--fs-xl);
+}
+
+h3{
+    font-size: var(--fs-lg);
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
+header{
+    background: #231F20;
+}
+
+
+img{
+    width: 100px;
+    height: 2rem;
+}
+
 
 @media (width >= 80em) {
     :root {

@@ -14,20 +14,73 @@
                     <img src="assets/logo(1).png" alt="">
                 </a>
 
-                <a href="#" class="desktop-only">Como usar</a>
-                <a href="#" class="btn btn-sm">Pesquisar</a>
+                <a href="#features" class="desktop-only">Como usar</a>
+                <a href="#searchFlights" class="btn btn-sm">Pesquisar</a>
             </nav>
         </div>
     </header>
 
-    <section>
+    <section id="features">
+        <div class="cards container py-xl grid gap-1.5">
+            <div class="card py-lg px-lg">
+                <h3> Como Usar o SKYDEALS</h3>
+                </p>Encontre as melhores ofertas de passagens aéreas de forma rápida e fácil:</p>
+                </div>
+                <div class="card py-lg px-lg ">
+                <h3>Digite sua origem e destino</h3>
+
+                <p>Insira o aeroporto ou cidade de partida e chegada.</p>
+                </p>Selecione as datas da sua viagem utilizando nosso calendário intuitivo.</p>
+            </div>
+            
+            <div class="card py-lg px-lg">
+                <h3>Personalize sua busca</h3>
+
+                <p>Escolha entre passagens de ida, volta ou ida e volta.</p>
+                </p>Ajuste as preferências de classe (econômica, executiva, primeira classe) e o número de passageiros.</p>
+                </p>
+
+            </div>
+
+            <div class="card py-lg px-lg ">
+                <h3>Compare e economize</h3>
+
+                </p>Navegue por uma lista organizada com base no preço, duração ou horários dos voos.</p>
+                </p>Utilize filtros como escalas, companhias aéreas e horários para refinar os resultados.</p>
+            </div>
+            <div class="card py-lg px-lg">
+                <h3>Escolha e reserve</h3>
+
+                <p>Clique na oferta que mais atende às suas necessidades.</p>
+                </p>Complete sua reserva com segurança no site da companhia aérea ou parceiro oficial.</p>
+            </div>
+            <div class="card py-lg px-lg">
+                <h3> Receba sua confirmação</h3>
+
+               <p>Após a compra, você receberá todas as informações do seu voo por e-mail.</p>
+               </div>
+               <div class="card py-lg px-lg">
+               <h3>Por que usar o SKYDEALS?</h3>
+               <p>Receba alertas de preços para garantir as melhores ofertas.</p>
+               </p>Explore destinos no nosso mapa interativo e descubra promoções exclusivas.</p>
+               </p>Com o SKYDEALS, planejar sua próxima viagem ficou ainda mais simples. Comece agora!</p>
+            </div>
+            </div>
+        
+    </section>
+    <section id="searchFlights">
         <div class="container py-base">
 
             <div class="contentBox">
                 <input type="text" id="origin" placeholder="Origem">
                 <input type="text" id="destination" placeholder="Destino">
-                <input type="date" name="" id="startDate">
-                <input type="date" name="" id="endDate">
+                <input type="text" 
+                placeholder="Adicionar data" 
+                onfocus="this.type='date'" 
+                onblur="if (!this.value) this.type='text'" name="" id="startDate" >
+                <input placeholder="Adicionar data" 
+                onfocus="this.type='date'" 
+                onblur="if (!this.value) this.type='text'" id="endDate">
                 <button class="searchButton">Buscar</button>
             </div>
         </div>
